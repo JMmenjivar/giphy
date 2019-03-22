@@ -17,7 +17,7 @@ $('button').click(function(){
            
               
           
-           var pic_url = response.data[0].images.original.url;
+           var pic_url = response.data[Math.floor(Math.random()* 10)].images.original.url;
            $('.text-center').append('<img src=' + pic_url + '>');
       },
     }); 
